@@ -1,0 +1,46 @@
+{
+  "name": "pug-tailwindcss-javascript-gulp",
+  "version": "1.0.0",
+  "description": "Pug + Tailwind CSS + Javascript + Gulp",
+  "main": "index.js",
+  "homepage": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp#readme",
+  "paths": {
+    "src": {
+      "css": "./src/css/"
+    },
+    "dist": {
+      "base": "./dist/",
+      "css": "./dist/css/"
+    },
+    "config": {
+      "tailwind": "./tailwind.js"
+    }
+  },
+  "keywords": [
+    "node",
+    "pug",
+    "gulp",
+    "css",
+    "javascript",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp/issues"
+  },
+  "author": "Vinicius Cainelli <vicainelli@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-purgecss": "^0.15.0",
+    "tailwindcss": "^0.6.4"
+  }
+}
