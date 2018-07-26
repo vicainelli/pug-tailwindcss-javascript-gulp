@@ -4,7 +4,6 @@ const paths = require("./package.json").paths;
 const gulp = require("gulp");
 const concat = require("gulp-concat");
 const plumber = require("gulp-plumber");
-const sass = require("gulp-sass");
 const pug = require('gulp-pug');
 const postcss = require("gulp-postcss");
 const purgecss = require("gulp-purgecss");
