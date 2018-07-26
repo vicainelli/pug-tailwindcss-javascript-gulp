@@ -19,4 +19,4 @@
 `gulp`
 
 ### Run Build Task
-`gulp build`
+`npm production`
