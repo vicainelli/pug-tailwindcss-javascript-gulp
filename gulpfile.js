@@ -56,10 +56,8 @@ gulp.task('views', () => {
 });
 
 // WATCH
-gulp.task('watch', function () {
+gulp.task('default', function () {
   gulp.watch("./src/views/**/*.pug", ["views"]);
-  gulp.watch("./src/sass/*.scss", ["styles"]);
+  gulp.watch("./src/js/**/*.js", ["scripts"]);
+  gulp.watch(paths.dist.base + "**/*.html", ["css"]);
 });
-
-// BUILD
-gulp.task('build', ['views', 'styles']);

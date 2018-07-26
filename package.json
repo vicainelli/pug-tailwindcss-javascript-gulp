@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pug + Tailwind CSS + Javascript + Gulp",
   "main": "index.js",
+  "scripts": {
+    "production": "gulp views && gulp css && gulp scripts"
+  },
   "homepage": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp#readme",
   "paths": {
     "src": {
