@@ -6,6 +6,9 @@
 
 `yarn`
 
+### Run Server Task (watch)
+`gulp server`
+
 ### Run Individual Tasks
 
 #### CSS (TailwindCSS)
@@ -14,9 +17,9 @@
 #### Pug
 `gulp views`
 
-
-### Run Watch Task
-`gulp`
+#### Copy Images
+Just to copy Images from `src` to `dist`
+`gulp copy-images`
 
 ### Run Build Task
-`npm production`
+`npm run production`
