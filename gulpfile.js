@@ -2,6 +2,7 @@
 const paths = require("./package.json").paths;
 
 const gulp = require("gulp");
+const browserSync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const plumber = require("gulp-plumber");
 const pug = require('gulp-pug');
@@ -60,4 +61,25 @@ gulp.task('default', function () {
   gulp.watch("./src/views/**/*.pug", ["views"]);
   gulp.watch("./src/js/**/*.js", ["scripts"]);
   gulp.watch(paths.dist.base + "**/*.html", ["css"]);
+});
+
+// SERVER +  Watch
+gulp.task("server", ["css"], () => {
+  browserSync.init({
+    server: {
+      baseDir: paths.dist.base
+    }
+  });
+
+  gulp.watch([paths.src.views + "**/*.pug"], ["views"]);
+  gulp.watch(paths.src.css + "*.css", ["css"]);
+  gulp.watch(paths.config.tailwind, ["css"]);
+  gulp.watch(paths.dist.base + "**/*.html", ["css"]);
+  gulp.watch(paths.dist.base + "**/*.html").on("change", browserSync.reload);
+});
+
+// COPY
+gulp.task('copy-images', () => {
+  return gulp.src(paths.src.images + '**.*')
+    .pipe(gulp.dest(paths.dist.images));
 });

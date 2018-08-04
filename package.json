@@ -4,16 +4,19 @@
   "description": "Pug + Tailwind CSS + Javascript + Gulp",
   "main": "index.js",
   "scripts": {
-    "production": "gulp views && gulp css && gulp scripts"
+    "production": "gulp copy-images && gulp views && gulp css && gulp scripts"
   },
   "homepage": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp#readme",
   "paths": {
     "src": {
-      "css": "./src/css/"
+      "css": "./src/css/",
+      "views": "./src/views/",
+      "images": "./src/images/"
     },
     "dist": {
       "base": "./dist/",
-      "css": "./dist/css/"
+      "css": "./dist/css/",
+      "images": "./dist/images/"
     },
     "config": {
       "tailwind": "./tailwind.js"
@@ -38,6 +41,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.0",
