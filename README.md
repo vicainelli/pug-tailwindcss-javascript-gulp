@@ -6,6 +6,9 @@
 
 `yarn`
 
+### Run Build Task
+`npm run production`
+
 ### Run Server Task (watch)
 `gulp server
 
