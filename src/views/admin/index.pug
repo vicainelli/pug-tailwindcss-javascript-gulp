@@ -1,0 +1,49 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="/css/style.css")
+
+    title Document
+  body
+
+    .flex
+      .w-64.xl--w-xs.h-screen.bg-teal-light.sticky.pin-t
+
+        .h-12.bg-teal-dark.p-4
+          h1.text-base.text-white.font-light.uppercase.tracking-wide
+            | Admin
+          div
+
+
+      .flex-1.bg-grey-lightest
+        .h-12.bg-white.shadow.sticky.pin.t
+          .px-4.pt-1.flex.justify-between
+            .flex-1
+            div
+              .items-center.flex
+                .mr-2
+                  | Vinicius Cainelli
+                div
+                  button.border-2.border-grey.rounded-full.hover--border-white
+                    img(src="https://avatars2.githubusercontent.com/u/1155694?s=460&v=4", alt="").h-8.rounded-full
+
+        //- CONTENT
+        .p-2
+          .flex
+            .bg-white.m-2.p-4.rounded.shadow.h-32.flex-1
+              h2.text-grey-light.font-bold.text-sm.tracking-wide
+               |  Total Users
+            .bg-white.m-2.p-4.rounded.shadow.h-32.flex-1
+              h2.text-grey-light.font-bold.text-sm.tracking-wide
+               |  Mini Card
+
+          //- card
+          .bg-white.m-2.p-4.rounded.shadow.h-lg
+            h2.text-lg.font-normal.border-b.border-grey-lighest.pb-3
+              | Card TItle
+          //- card
+          .bg-white.m-2.p-4.rounded.shadow.h-lg
+            h2.text-lg.font-normal.border-b.border-grey-lighest.pb-3
+              | Card TItle
