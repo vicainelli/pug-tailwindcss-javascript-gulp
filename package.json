@@ -4,7 +4,7 @@
   "description": "Pug + Tailwind CSS + Javascript + Gulp",
   "main": "index.js",
   "scripts": {
-    "production": "gulp copy-images && gulp views && gulp css && gulp scripts"
+    "build": "gulp copy-images && gulp views && gulp css && gulp scripts"
   },
   "homepage": "https://github.com/vicainelli/pug-tailwindcss-javascript-gulp#readme",
   "paths": {
