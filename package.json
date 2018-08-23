@@ -48,6 +48,6 @@
     "gulp-postcss": "^7.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-purgecss": "^0.15.0",
-    "tailwindcss": "^0.6.4"
+    "tailwindcss": "^0.6.5"
   }
 }
