@@ -10,9 +10,7 @@
 `npm run production`
 
 ### Run Server Task (watch)
-`gulp server
-
----`
+`gulp server`
 
 ### Run Individual Tasks
 
