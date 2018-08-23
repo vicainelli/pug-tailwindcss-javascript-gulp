@@ -1,6 +1,8 @@
 # Pug + Sass + Javascript + Gulp
 
 [![license](https://img.shields.io/github/license/vicainelli/pug-tailwindcss-javascript-gulp.svg)](LICENSE)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0c1966e09f2eb1b28d89/maintainability)](https://codeclimate.com/github/vicainelli/pug-tailwindcss-javascript-gulp/maintainability)
+
 
 ### Install dependencies
 
